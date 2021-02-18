@@ -10,7 +10,7 @@ Vor Beginn der Arbeit an den Daten muss zunächst sichergestellt werden, dass Nu
 Um das zu überprüfen, kann die folgende Option verwendet werden:
 *@4) Die aktuelle Konfiguration ansehen.@*
 
-Der Nutzername sollte das Muster *@Vorname Nachname@* haben und die Email-Adresse sollte die Email-Adresse sein *@name@mailserver.de@*.
+Der Nutzername sollte das Muster *@Vorname Nachname@* haben und die Email-Adresse sollte eine gültige Email-Adresse mit dem Muster *@name@mailserver.de@* sein.
 
 ## Die Konfiguration aendern (5)
 
@@ -23,7 +23,7 @@ Bevor man anfängt, an den Dateien zu arbeiten, muss sichergestellt werden, dass
 Die Dateien können per Auswahl der folgenden Option aktualisiert werden: 
 *@2) Lokales Repository auf den neuesten Stand bringen.@*.
 
-Hierbei wird zunächst sichergestellt, dass sich keine im Änderungsmodus befindlichen Dateien im lokalen Repository befinden und dann werden die Dateien mit der letzten öffentlichen Version aktualisiert. 
+Hierbei wird zunächst sichergestellt, dass sich keine im Änderungsmodus befindlichen Dateien im lokalen Repository befinden, und dann werden die Dateien mit der letzten öffentlichen Version aktualisiert. 
 Wenn es noch unveröffentlichte lokale Änderungen gibt, werden keine Dateien aktualisiert. Um zu sehen, welche Änderungen genau noch vorliegen, wählt man die Option 
 *@1) Aktuellen Stand des lokalen Repository anschauen.@*.
 
@@ -47,10 +47,10 @@ Um die Nachricht zu bestätigen und mit der Ausführung des Skripts fortzufahren
 Wenn die Eingabe von :wq nicht klappt, nachdem man ESC gedrückt hat, drückt man stattdessen auf die Taste i und gibt dann :wq ein und drückt ENTER.
  
 
-Falls zwei Personen gleichezeitig an einem Teil der gleichen Datei gearbeitet haben, kann dieses zu einem Konflikt führen, den Git nicht automatisch auflösen kann. 
+Falls zwei Personen gleichzeitig an einem Teil der gleichen Datei gearbeitet haben, kann dieses zu einem Merge-Konflikt führen, den Git nicht automatisch auflösen kann. 
 Wenn es hierzu kommt, wird in LAMA eine entsprechende Nachricht angezeigt und eine Datei names ZEITSTEMPEL-git-conflict.txt im bearbeiteten Ordner angelegt.
 Solche Arten von Konflikten müssen manuell gelöst werden, entweder von einem Verantwortlichen für das Korpus oder vom technischen Team. In jedem Fall sollte eine/r von beiden kontaktiert werden, um das weitere Vorgehen zu besprechen.
-Die Daten sind währenddessen weiterhin gesichert und eine Lösung ist in dem meisten Fällen schnell gefunden.)
+Die Daten sind währenddessen weiterhin gesichert und eine Lösung ist in den meisten Fällen schnell gefunden.
 
 ## Weiter arbeiten mit den Dateien und Änderungen speichern, Commit Message hinzufügen, Änderungen im Haupt-Repository veröffentlichen und lokales Git Repository aktualisieren
 
