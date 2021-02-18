@@ -27,8 +27,6 @@
     LAMA (= Linguistic Automation Management Assistent) was created in the project [INEL](https://inel.corpora.uni-hamburg.de) to simplify and error-proof using [git](git-scm.com)
 for linguists/non-tech collaborators. 
     <br />
-    <a href="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/tree/develop/doc"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/issues">Report Bug</a>
     ·
@@ -42,9 +40,7 @@ for linguists/non-tech collaborators.
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-* [Getting Started](#getting-started)
-* [Using lama](#usage)
-* [Roadmap](#roadmap)
+* [Using LAMA](#usaging-lama)
 * [Contributing](#contributing)
 * [License](#license)
 * [Authors](#authors)
@@ -153,8 +149,11 @@ The most complex version of LAMA contains integration of the [corpus services](h
 ## To be used with
 
 [git](http://git-scm.com/)
+<br />
 optionally:
+<br />
 [Mattermost](https://mattermost.com/)
+<br />
 [corpus services](https://gitlab.rrz.uni-hamburg.de/corpus-services/corpus-services)
 
 <!-- ROADMAP -->
@@ -200,6 +199,7 @@ Contributions to the project have been made by staff from [INEL](https://inel.co
 <sub>Parts of this project have been produced in the context of the joint research funding of the German Federal Government and Federal States in the Academies’ Programme, with funding from the Federal Ministry of Education and Research and the Free and Hanseatic City of Hamburg. The Academies’ Programme is coordinated by the Union of the German Academies of Sciences and Humanities.</sub>
 
 This README file was created on the basis of the [Best-README-Template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md).
+<br />
 Logo created at LogoMakr.com.
 
 <!-- MARKDOWN LINKS & IMAGES -->
