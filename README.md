@@ -18,7 +18,7 @@
 <br />
 <p align="center">
   <a href="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/raw/main/logo/logo.png">
-    <img src="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/raw/main/logo/logo.png" alt="Logo" width="300" height="125">
+    <img src="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/raw/main/logo/logo.png" alt="Logo" width="300" height="141">
   </a>
 
   <h3 align="center">LAMA - your friendly and easy git script</h3>
