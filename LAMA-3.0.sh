@@ -7,7 +7,6 @@ branch="main" #please set to the name of the branch you want to pull from and pu
 conflictPath="${timestamp}-conflict.txt"
 SCRIPT=`realpath $0`
 directory=`dirname $SCRIPT`
-corpusServicesJar="../corpus-services-1.0.jar" #please set to the location of the corpus-services jar
 user=`git config user.name`
 user="${user%\"}"
 user="${user#\"}"

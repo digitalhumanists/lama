@@ -39,8 +39,10 @@ for linguists/non-tech collaborators.
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-* [Using LAMA](#usaging-lama)
+* [About the project](#about-the-project)
+* [Setting up](#setting-up)
+* [Using LAMA](#using-lama)
+* [Additional versions of LAMA](#additional-versions-of-lama)
 * [Contributing](#contributing)
 * [License](#license)
 * [Authors](#authors)
@@ -50,7 +52,7 @@ for linguists/non-tech collaborators.
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About the project
 
 LAMA (= Linguistic Automation Management Assistent) was created in the project [INEL](https://inel.corpora.uni-hamburg.de) to simplify and error-proof using [git](git-scm.com)
 for linguists/non-tech people. 
@@ -60,6 +62,20 @@ While it is a very basic shell script, it was created after lots of experience o
 The script is intended for people that do not want to learn specific git commands while still being able to collaborate with other git users on projects, especially in a setup where there are technical git maintainers and other collaborators.
 
 Please note that with this script it is assumed that the git repository was already cloned and setup properly before. If git lfs was also set up correctly the script works correctly with lfs as well.
+
+# Setting up
+
+To use the basic version you only need the file LAMA-3.0.sh. It should be placed inside of the cloned git repository you want to work with. For multiple repositories, use multiple LAMA files. If your remote repository is "origin" and the branch you want to work with "main" you don't need to change any variables, otherwise change the variables remote and branch in the LAMA script.
+
+## Running the script
+
+* On Windows, install the git-bash and let the git-bash open bash scripts by default, then you can just double click LAMA and follow the steps in [Using LAMA](#using-lama).
+* On Linux, run the LAMA via `bash LAMA-3.0.sh` from the terminal.
+* On Mac, please convert the line endings of the LAMA script to LF as EOL symbols. Also coreutils needs to be installed, e.g. using `brew install coreutils`.
+
+Feel free to open [issues][issues-url] or send us a [message](#contact) if you run into any problems!
+
+For more complex versions of the scripts please see [Additional versions of LAMA](#additional-versions-of-lama).
 
 <!-- USAGE EXAMPLES -->
 # Using LAMA
@@ -171,6 +187,8 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+Feel free to open [issues][issues-url] or send us a [message](#contact) if you run into any problems!
 
 <!-- LICENSE -->
 ## License
