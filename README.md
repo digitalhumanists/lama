@@ -218,7 +218,7 @@ Contributions to the project have been made by staff from [INEL](https://inel.co
 
 This README file was created on the basis of the [Best-README-Template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md).
 <br />
-Logo created at LogoMakr.com.
+Logo created at [LogoMakr.com](https://logomakr.com/).
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
