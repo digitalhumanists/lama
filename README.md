@@ -18,7 +18,7 @@
 <br />
 <p align="center">
   <a href="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/raw/main/logo/logo.png">
-    <img src="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/raw/main/logo/logo.png" alt="Logo" width="300" height="125">
+    <img src="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/raw/main/logo/logo.png" alt="Logo" width="300" height="141">
   </a>
 
   <h3 align="center">LAMA - your friendly and easy git script</h3>
@@ -57,7 +57,7 @@ for linguists/non-tech collaborators.
 LAMA (= Linguistic Automation Management Assistent) was created in the project [INEL](https://inel.corpora.uni-hamburg.de) to simplify and error-proof using [git](git-scm.com)
 for linguists/non-tech people. 
 
-While it is a very basic shell script, it was created after lots of experience of teaching non-tech people git with available GUIs as well as spending time fixing problems because of that.
+While technically it is a quite basic shell script, it was cretaed with lots of experience of teaching non-tech people using git with available GUIs as well as spending time fixing problems because of that. Therefore, on the one hand it is restricted to the most basic functionality needed for the every-day work with git, on the other hand it goes beyond git in providing the possibility to integrate processing steps to enhance data quality and for instance reduce the risk and frequency of git merge issues.
 
 The script is intended for people that do not want to learn specific git commands while still being able to collaborate with other git users on projects, especially in a setup where there are technical git maintainers and other collaborators.
 
