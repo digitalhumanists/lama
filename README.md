@@ -116,7 +116,7 @@ This steps additionally updates you local repository with the changes other peop
 
 If someone else worked on the files while you made changes, the script can show the following lines:
 
-<img src="https://sarafordnet.files.wordpress.com/2017/02/image82.png" alt="Image" width="700" >
+<img src="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/raw/main/logo/merge-screenshot.png" alt="Image" width="700" >
 
 If you see these lines, the correct commit message is already written there automatically. To confirm the message and continue with the script, press *ESC, then enter the letters :wq and press ENTER*.
 If you're not able to enter the letters :wq after you pressed ESC, press the letter i instead and write :wq and press ENTER.

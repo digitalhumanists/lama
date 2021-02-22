@@ -40,7 +40,7 @@ Dieser Schritt aktualisiert ebenfalls direkt das lokale Repository durch Hinzuf�
 
 Falls jemand anderes zur gleichen Zeit an den gleichen Dateien gearbeitet, kann es passieren, dass das Skript folgenden Inhalt anzeigt:
 
-<img src="https://sarafordnet.files.wordpress.com/2017/02/image82.png" alt="Image" width="700" >
+<img src="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/raw/main/logo/merge-screenshot.png" alt="Image" width="700" >
 
 Wenn diese Zeilen zu sehen sind, wurde die korrekte Commit-Nachricht bereits automatisch vorausgefüllt. 
 Um die Nachricht zu bestätigen und mit der Ausführung des Skripts fortzufahren, drückt man auf *ESC, und dann nacheinander auf die Tasten :wq (w= Speichern, q=Schließen) and drückt anschließend ENTER*.
