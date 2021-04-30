@@ -246,7 +246,13 @@ do
 			clear
 			break
 			;;
-		*) echo "ACHTUNG: Die Option $REPLY ist nicht verfuegbar.";;
+		*) if [ "$REPLY" == "0" ]; then
+				 read -p "Befehl eingeben (aber waehle weise, Du hast jetzt Superkraefte): `echo $'\n> '`" command
+				 eval $command
+            else
+                echo "Netter Versuch ;-) Die Option $REPLY ist nicht verfuegbar"
+            fi
+		;;
 	esac
 done
 

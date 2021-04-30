@@ -336,7 +336,13 @@ do
 			clear
 			break
 			;;
-		*) echo "ATTENTION: The option $REPLY is not available";;
+		*) if [ "$REPLY" == "0" ]; then
+				 read -p "Enter your command (but take care, you have superpowers now): `echo $'\n> '`" command
+				 eval $command
+            else
+                echo "Nice try ;-) The option $REPLY is not available"
+            fi
+		;;
 	esac
 done
 
