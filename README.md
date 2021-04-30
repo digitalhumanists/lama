@@ -165,7 +165,7 @@ Enter your command (but take care, you have superpowers now) or just press ENTER
 
 ## LAMA in German
 
-There is a version of the LAMA script available in German [here](https://github.com/anneferger/lama/tree/main/LAMA-German). It contains the Mattermost and corpus-services integration, but you could comment out the respective parts to use the basic version in German. There is also a German documentation of using LAMA [here](https://github.com/anneferger/lama/blob/main/LAMA-German/LAMA%20_de.md _de.md).
+There is a version of the LAMA script available in German [here](https://github.com/anneferger/lama/tree/main/LAMA-German). It contains the Mattermost and corpus-services integration, but you could comment out the respective parts to use the basic version in German. There is also a German documentation of using LAMA [here](https://github.com/anneferger/lama/blob/main/LAMA-German/LAMA%20_de.md).
 
 ## LAMA with Mattermost Messages
 
