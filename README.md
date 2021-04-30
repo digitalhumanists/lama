@@ -17,20 +17,20 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/raw/main/logo/logo.png">
-    <img src="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/raw/main/logo/logo.png" alt="Logo" width="300" height="141">
+  <a href="https://github.com/anneferger/lama/blob/main/logo/logo.png">
+    <img src="https://github.com/anneferger/lama/blob/main/logo/logo.png" alt="Logo" width="300" height="141">
   </a>
 
   <h3 align="center">LAMA - your friendly and easy git script</h3>
 
   <p align="center">
-    LAMA (Linguistic Automation Management Assistant) was created in the project [INEL](https://inel.corpora.uni-hamburg.de) to simplify and error-proof using [git](git-scm.com)
+    LAMA (Linguistic Automation Management Assistant) was initially developed in the project [INEL](https://inel.corpora.uni-hamburg.de) to simplify and error-proof using [git](git-scm.com)
 for linguists/non-tech collaborators. 
     <br />
     <br />
-    <a href="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/issues">Report Bug</a>
+    <a href="https://github.com/anneferger/lama/issues">Report Bug</a>
     ·
-    <a href="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/issues">Request Feature</a>
+    <a href="https://github.com/anneferger/lama/issues">Request Feature</a>
   </p>
 </p>
 
@@ -116,7 +116,7 @@ This steps additionally updates you local repository with the changes other peop
 
 If someone else worked on the files while you made changes, the script can show the following lines:
 
-<img src="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/raw/main/logo/merge-screenshot.png" alt="Image" width="700" >
+<img src="https://github.com/anneferger/lama/blob/main/logo/merge-screenshot.png" alt="Image" width="700" >
 
 If you see these lines, the correct commit message is already written there automatically. To confirm the message and continue with the script, press *ESC, then enter the letters :wq and press ENTER*.
 If you're not able to enter the letters :wq after you pressed ESC, press the letter i instead and write :wq and press ENTER.
@@ -165,15 +165,15 @@ Enter your command (but take care, you have superpowers now) or just press ENTER
 
 ## LAMA in German
 
-There is a version of the LAMA script available in German [here](https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/tree/main/LAMA-German). It contains the Mattermost and corpus-services integration, but you could comment out the respective parts to use the basic version in German. There is also a German documentation of using LAMA [here](https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/tree/main/LAMA-German/LAMA _de.md).
+There is a version of the LAMA script available in German [here](https://github.com/anneferger/lama/tree/main/LAMA-German). It contains the Mattermost and corpus-services integration, but you could comment out the respective parts to use the basic version in German. There is also a German documentation of using LAMA [here](https://github.com/anneferger/lama/blob/main/LAMA-German/LAMA%20_de.md _de.md).
 
 ## LAMA with Mattermost Messages
 
-There is a more complex version of LAMA which sends messaged to Mattermost if a respective hook is provided available [here](https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/tree/main/LAMA-Mattermost). Replace the variable mattermosturl="https://your.mattermost.server.com/mattermost/hooks/HOOKSHA" with you Mattermost Webhook URL. Find out more about how to create Mattermost Webhooks [here](https://docs.mattermost.com/developer/webhooks-incoming.html).
+There is a more complex version of LAMA which sends messaged to Mattermost if a respective hook is provided available [here](https://github.com/anneferger/lama/tree/main/LAMA-Mattermost). Replace the variable mattermosturl="https://your.mattermost.server.com/mattermost/hooks/HOOKSHA" with you Mattermost Webhook URL. Find out more about how to create Mattermost Webhooks [here](https://docs.mattermost.com/developer/webhooks-incoming.html).
 
 ## LAMA with corpus services
 
-The most complex version of LAMA contains integration of the [corpus services](https://gitlab.rrz.uni-hamburg.de/corpus-services/corpus-services) tool using its jar. It is used when working with [EXMARaLDA](https://exmaralda.org/en/) corpora and git for pretty printing and normalizing of the transcription files. It also contains the Mattermost integration. See [here](https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/tree/main/LAMA-corpus-services).
+The most complex version of LAMA contains integration of the [corpus services](https://github.com/anneferger/corpus-services) tool using its jar. It is used when working with [EXMARaLDA](https://exmaralda.org/en/) corpora and git for pretty printing and normalizing of the transcription files. It also contains the Mattermost integration. See [here](https://github.com/anneferger/lama/tree/main/LAMA-corpus-services).
 
 <!-- LIBRARIES -->
 ## To be used with
@@ -184,12 +184,12 @@ optionally:
 <br />
 [Mattermost](https://mattermost.com/)
 <br />
-[corpus services](https://gitlab.rrz.uni-hamburg.de/corpus-services/corpus-services)
+[corpus services](https://github.com/anneferger/corpus-services)
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/anneferger/lama/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -221,7 +221,7 @@ Daniel Jettka
 
 Anne Ferger - [@anneferger1](https://twitter.com/anneferger1) - anne.ferger@mail.de
 
-Project Link: [LAMA](https://gitlab.rrz.uni-hamburg.de/corpus-services/lama)
+Project Link: [LAMA](https://github.com/anneferger/lama)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
@@ -237,8 +237,8 @@ Logo created at [LogoMakr.com](https://logomakr.com/).
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/graphs/main
-[forks-url]: https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/forks
-[issues-url]: https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/issues
-[license-url]: https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/blob/main/LICENSE
+[contributors-url]: https://github.com/anneferger/lama/graphs/contributors
+[forks-url]: https://github.com/anneferger/lama/-/forks
+[issues-url]: https://github.com/anneferger/lama/issues
+[license-url]: https://github.com/anneferger/lama/blob/main/LICENSE
 
