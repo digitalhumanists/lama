@@ -212,10 +212,10 @@ do
 			break
 			;;
 		*) if [ "$REPLY" == "0" ]; then
-				 read -p "Enter your command (but take care, you have superpowers now): `echo $'\n> '`" command
+				 read -p "Enter your command (but take care, you have superpowers now) or just press ENTER to go back: `echo $'\n> '`" command
 				 eval $command
             else
-                echo "Nice try ;-) The option $REPLY is not available"
+                echo "Nice try ;-) The option $REPLY is not available. See https://github.com/anneferger/lama for more."
             fi
 		;;
 	esac
