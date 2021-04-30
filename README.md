@@ -79,6 +79,8 @@ For more complex versions of the scripts please see [Additional versions of LAMA
 <!-- USAGE EXAMPLES -->
 # Using LAMA
 
+To run LAMA, double click on the LAMA-*.sh file located in the folder you want to work on.
+
 The menu of LAMA looks like this:
 
 <img src="https://github.com/anneferger/lama/blob/main/logo/menu-screenshot.png" alt="Image" width="700" >
@@ -132,23 +134,6 @@ But your data will still be save and it does not take long to solve this.)
 ## Work further on the files and Save all your changes, add a message, publish your changes to the main Git repository and update your local Git repository afterwards
 
 Now you can work on the files again and save and publish your changes afterwards. Remember to start with the first step again if you make a pause. 
-
-To run LAMA, double click on the LAMA-*.sh file located in the folder you want to work on. 
-The menu looks like this:
-
-<pre>
-Welcome to Git with LAMA
-
-1) See the current state of your local repository.
-2) Update your local repository.
-3) Save all your changes, add a message, publish your changes to the main repository and update your local repository.
-4) Viewing your current configuration.
-5) Setting up your configuration.
-6) Help!
-7) Quit
-
-Please choose an option (1-7) or press ENTER to display menu:
-</pre>
 
 ## "Secret" option 0 : enter any command
 
