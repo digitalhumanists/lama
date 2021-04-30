@@ -65,12 +65,12 @@ Please note that with this script it is assumed that the git repository was alre
 
 # Setting up
 
-To use the basic version you only need the file LAMA-3.0.sh. It should be placed inside of the cloned git repository you want to work with. For multiple repositories, use multiple LAMA files. If your remote repository is "origin" and the branch you want to work with "main" you don't need to change any variables, otherwise change the variables remote and branch in the LAMA script.
+To use the basic version you only need the file LAMA-3.1.sh. It should be placed inside of the cloned git repository you want to work with. For multiple repositories, use multiple LAMA files. If your remote repository is "origin" and the branch you want to work with "main" you don't need to change any variables, otherwise change the variables remote and branch in the LAMA script.
 
 ## Running the script
 
 * On Windows, install the git-bash and let the git-bash open bash scripts by default, then you can just double click LAMA and follow the steps in [Using LAMA](#using-lama).
-* On Linux, run the LAMA via `bash LAMA-3.0.sh` from the terminal.
+* On Linux, run the LAMA via `bash LAMA-3.1.sh` from the terminal.
 * On Mac, please convert the line endings of the LAMA script to LF as EOL symbols. Also coreutils needs to be installed, e.g. using `brew install coreutils`.
 
 Feel free to open [issues][issues-url] or send us a [message](#contact) if you run into any problems!

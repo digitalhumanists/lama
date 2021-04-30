@@ -31,7 +31,7 @@ mattermosturl="https://your.mattermost.server.com/mattermost/hooks/HOOKSHA"
 #else
 #    mattermosturl="https://your.mattermost.server.com/mattermost/hooks/HOOKSHA"
 #fi																	 
-version="3.0-de" #Version von LAMA
+version="3.1-de" #Version von LAMA
 
 echo "
 
