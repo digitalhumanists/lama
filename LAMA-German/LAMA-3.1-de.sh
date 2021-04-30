@@ -247,10 +247,10 @@ do
 			break
 			;;
 		*) if [ "$REPLY" == "0" ]; then
-				 read -p "Befehl eingeben (aber waehle weise, Du hast jetzt Superkraefte): `echo $'\n> '`" command
+				 read -p "Befehl eingeben (aber waehle weise, Du hast jetzt Superkraefte) oder druecke ENTER um abzubrechen: `echo $'\n> '`" command
 				 eval $command
             else
-                echo "Netter Versuch ;-) Die Option $REPLY ist nicht verfuegbar"
+                echo "Netter Versuch ;-) Die Option $REPLY ist nicht verfuegbar. Mehr Infos unter https://github.com/anneferger/lama."
             fi
 		;;
 	esac
