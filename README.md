@@ -24,8 +24,7 @@
   <h3 align="center">LAMA - your friendly and easy git script</h3>
 
   <p align="center">
-    LAMA (Linguistic Automation Management Assistant) was initially developed in the project [INEL](https://inel.corpora.uni-hamburg.de) to simplify and error-proof using [git](git-scm.com)
-for linguists/non-tech collaborators. 
+    LAMA (Linguistic Automation Management Assistant) was initially developed in the project <a href="https://inel.corpora.uni-hamburg.de">INEL</a> to simplify and error-proof using <a href="git-scm.com">git</a> for linguists/non-tech collaborators. 
     <br />
     <br />
     <a href="https://github.com/anneferger/lama/issues">Report Bug</a>
