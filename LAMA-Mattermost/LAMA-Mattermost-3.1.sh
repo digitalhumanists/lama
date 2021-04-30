@@ -7,17 +7,31 @@ branch="main" #please set to the name of the branch you want to pull from and pu
 conflictPath="${timestamp}-conflict.txt"
 SCRIPT=`realpath $0`
 directory=`dirname $SCRIPT`
+corpusServicesJar="../corpus-services-1.0.jar" #please set to the location of the corpus-services jar
 user=`git config user.name`
 user="${user%\"}"
 user="${user#\"}"
 #messages in the script
 conflictecho="ATTENTION: The local repository cannot be updated because of a conflict. The merge process will be aborted and a mattermost message will be sent to the git maintainers."
 pullsuccessful="Updating of your files was successful, thank you for your time."
+noconflict="Great, there are no conflicts."
 localchanges="ATTENTION: There are local changes on the files. Please remove them or save them with LAMA before updating."
 nolocalchanges="There are no changes in your local files."
+#messages for mattermost or in the conflict text files
+conflictmessage="ATTENTION: Please resolve a merge conflict manually in ${directory} by ${user}."
 #this could happen if there would be large binary files without git lfs for example
 pullerror="ATTENTION: The pull operation was faulty. Please fix it in ${directory} by ${user}."
-version="3.0" #version of LAMA
+#mattermost hook urls
+mattermosturl="https://your.mattermost.server.com/mattermost/hooks/HOOKSHA"
+#or for multiple repositories and respective Mattermost channels
+#if [[ "$(git config --get remote.origin.url)" == reponame.git ]]; then
+#    mattermosturl="https://your.mattermost.server.com/mattermost/hooks/HOOKSHA"
+#elif [[ "$(git config --get remote.origin.url)" == otherreponame.git ]]; then
+#    mattermosturl="https://your.mattermost.server.com/mattermost/hooks/HOOKSHA"
+#else
+#    mattermosturl="https://your.mattermost.server.com/mattermost/hooks/HOOKSHA"
+#fi
+version="3.1" #version of LAMA
 
 echo "
 
@@ -90,6 +104,7 @@ do
 					git merge --abort
 					git status >> $conflictPath
 					echo $conflictmessage >> $conflictPath
+					curl -i -X POST --data-urlencode "payload={\"text\": \"${conflictmessage}\"}" ${mattermosturl}
 					read
 					exit 1
 				else
@@ -106,10 +121,11 @@ do
                                                                 #this is important so people can work further on the files and the conflict can be solved later
 																git merge --abort
 																git status >> $conflictPath
-																echo $conflictmessage >> $conflictPath																
+																echo $conflictmessage >> $conflictPath
+																curl -i -X POST --data-urlencode "payload={\"text\": \"${conflictmessage}\"}" ${mattermosturl}
 																read
                                                                 exit 1
-														else																
+														else											
                                                                 echo "Updating will be carried out." 
 														fi
 														if [ -z "$(git status --porcelain)" ] 
@@ -119,14 +135,15 @@ do
 																git status
 																echo $pullerror
 																git status >> $conflictPath
-																echo $pullerror >> $conflictPath																
+																echo $pullerror >> $conflictPath
+																curl -i -X POST --data-urlencode "payload={\"text\": \"${$pullerror}\"}" ${mattermosturl}
 																read																
 														fi	
 													else									            								            
 														git status
 														echo $localchanges
 														read														
-					fi							
+					fi				
 			fi
 			;;	
 		"Save all your changes, add a message, publish your changes to the main repository and update your local repository.")
@@ -137,7 +154,8 @@ do
                     #this is important so people can work further on the files and the conflict can be solved later
 				    git merge --abort
 				    git status >> $conflictPath
-				    echo $conflictmessage >> $conflictPath				    
+				    echo $conflictmessage >> $conflictPath
+				    curl -i -X POST --data-urlencode "payload={\"text\": \"${conflictmessage}\"}" ${mattermosturl}
 				    read
                     exit 1
 				else
@@ -168,6 +186,7 @@ do
 											echo $conflictecho
 											git merge --abort
 											echo $conflictmessage >> $conflictPath
+											curl -i -X POST --data-urlencode "payload={\"text\": \"${conflictmessage}\"}" ${mattermosturl}
 											echo "The merge process was stopped and LAMA will be closed."
 											read
 											exit
@@ -184,6 +203,7 @@ do
 											echo "ATTENTION: The pull was faulty. Please fix it. "
 											git status >> $conflictPath
 											echo $pullerror >> $conflictPath
+											curl -i -X POST --data-urlencode "payload={\"text\": \"$pullerror\"}" ${mattermosturl}
 											read		
 									fi												
 									;;		
@@ -211,7 +231,13 @@ do
 			clear
 			break
 			;;
-		*) echo "ATTENTION: The option $REPLY is not available";;
+		*) if [ "$REPLY" == "0" ]; then
+				 read -p "Enter your command (but take care, you have superpowers now) or just press ENTER to go back: `echo $'\n> '`" command
+				 eval $command
+            else
+                echo "Nice try ;-) The option $REPLY is not available. See https://github.com/anneferger/lama for more."
+            fi
+		;;
 	esac
 done
 

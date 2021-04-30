@@ -31,7 +31,7 @@ mattermosturl="https://your.mattermost.server.com/mattermost/hooks/HOOKSHA"
 #else
 #    mattermosturl="https://your.mattermost.server.com/mattermost/hooks/HOOKSHA"
 #fi																	 
-version="3.0-de" #Version von LAMA
+version="3.1-de" #Version von LAMA
 
 echo "
 
@@ -246,7 +246,13 @@ do
 			clear
 			break
 			;;
-		*) echo "ACHTUNG: Die Option $REPLY ist nicht verfuegbar.";;
+		*) if [ "$REPLY" == "0" ]; then
+				 read -p "Befehl eingeben (aber waehle weise, Du hast jetzt Superkraefte) oder druecke ENTER um abzubrechen: `echo $'\n> '`" command
+				 eval $command
+            else
+                echo "Netter Versuch ;-) Die Option $REPLY ist nicht verfuegbar. Mehr Infos unter https://github.com/anneferger/lama."
+            fi
+		;;
 	esac
 done
 

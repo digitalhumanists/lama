@@ -40,7 +40,7 @@ Dieser Schritt aktualisiert ebenfalls direkt das lokale Repository durch Hinzuf�
 
 Falls jemand anderes zur gleichen Zeit an den gleichen Dateien gearbeitet, kann es passieren, dass das Skript folgenden Inhalt anzeigt:
 
-<img src="https://gitlab.rrz.uni-hamburg.de/corpus-services/lama/-/raw/main/logo/merge-screenshot.png" alt="Image" width="700" >
+<img src="https://github.com/anneferger/lama/blob/main/logo/merge-screenshot.png" alt="Image" width="700" >
 
 Wenn diese Zeilen zu sehen sind, wurde die korrekte Commit-Nachricht bereits automatisch vorausgefüllt. 
 Um die Nachricht zu bestätigen und mit der Ausführung des Skripts fortzufahren, drückt man auf *ESC, und dann nacheinander auf die Tasten :wq (w= Speichern, q=Schließen) and drückt anschließend ENTER*.
@@ -87,4 +87,18 @@ Git repository ist erreichbar
 
 Bitte waehle eine Option (1-7) oder druecke ENTER um das Menue anzuzeigen: 
 
+</pre>
+
+## "Geheime" Option 0: Eingabe beliebiger Kommandos
+
+Zu administrativen Zwecken und die Eingabe selten verwendeter Kommandos gibt es in LAMA eine "geheime" Option.
+
+Durch Eingabe der Option 0 (anstatt 1-7) ist es möglich beliebige Kommandos, bspw. zum Klonen eines Git Repositories, oder andere Aktionen auszuführen, die ncht von den offiziellen LAMA Optionen abgedeckt werden.
+
+Hierbei ist jedoch spezielle Vorsicht geboten, da Zugriff auf alle Kommandos des Terminals gewährt wird (inkl. des Löschens von Dateien)!
+
+<pre>
+itte waehle eine Option (1-7) oder druecke ENTER um das Menue anzuzeigen: 0
+Befehl eingeben (aber waehle weise, Du hast jetzt Superkraefte) oder druecke ENTER um abzubrechen: 
+> 
 </pre>
