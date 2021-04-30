@@ -147,6 +147,20 @@ Welcome to Git with LAMA
 Please choose an option (1-7) or press ENTER to display menu:
 </pre>
 
+## "Secret" option 0 : enter any command
+
+For administration purposes and seldomly necessary commands a "secret" option has been added to LAMA. 
+
+When the option 0 (instead of 1-7) is entered in the selection menu, it is possible to enter any command, e.g. for cloning Git repositories or other actions not covered by the official LAMA options.
+
+Special care has to be taken when this option is used because it gives full access to all available terminal commands (incl. file deletion)!
+
+<pre>
+Please choose an option (1-7) or press ENTER to display menu: 0
+Enter your command (but take care, you have superpowers now) or just press ENTER to go back: 
+> 
+</pre>
+
 # Additional versions of LAMA 
 
 ## LAMA in German
