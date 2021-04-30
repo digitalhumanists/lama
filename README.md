@@ -79,6 +79,10 @@ For more complex versions of the scripts please see [Additional versions of LAMA
 <!-- USAGE EXAMPLES -->
 # Using LAMA
 
+The menu of LAMA looks like this:
+
+<img src="https://github.com/anneferger/lama/blob/main/logo/menu-screenshot.png" alt="Image" width="700" >
+
 Working with LAMA consists of some steps that need to be carried out in a specific order:
 
 ## Viewing your current configuration (4)
