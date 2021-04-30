@@ -98,7 +98,7 @@ Durch Eingabe der Option 0 (anstatt 1-7) ist es möglich beliebige Kommandos, bs
 Hierbei ist jedoch spezielle Vorsicht geboten, da Zugriff auf alle Kommandos des Terminals gewährt wird (inkl. des Löschens von Dateien)!
 
 <pre>
-itte waehle eine Option (1-7) oder druecke ENTER um das Menue anzuzeigen: 0
+Bitte waehle eine Option (1-7) oder druecke ENTER um das Menue anzuzeigen: 0
 Befehl eingeben (aber waehle weise, Du hast jetzt Superkraefte) oder druecke ENTER um abzubrechen: 
 > 
 </pre>
