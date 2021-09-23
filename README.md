@@ -17,8 +17,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/anneferger/lama/blob/main/logo/logo.png">
-    <img src="https://github.com/anneferger/lama/blob/main/logo/logo.png" alt="Logo" width="300" height="141">
+  <a href="https://github.com/digitalhumanists/lama/blob/main/logo/logo.png">
+    <img src="https://github.com/digitalhumanists/lama/blob/main/logo/logo.png" alt="Logo" width="300" height="141">
   </a>
 
   <h3 align="center">LAMA - your friendly and easy git script</h3>
@@ -27,9 +27,9 @@
     LAMA (Linguistic Automation Management Assistant) was initially developed in the project <a href="https://inel.corpora.uni-hamburg.de">INEL</a> to simplify and error-proof using <a href="git-scm.com">git</a> for linguists/non-tech collaborators. 
     <br />
     <br />
-    <a href="https://github.com/anneferger/lama/issues">Report Bug</a>
+    <a href="https://github.com/digitalhumanists/lama/issues">Report Bug</a>
     ·
-    <a href="https://github.com/anneferger/lama/issues">Request Feature</a>
+    <a href="https://github.com/digitalhumanists/lama/issues">Request Feature</a>
   </p>
 </p>
 
@@ -60,6 +60,8 @@ While technically it is a quite basic shell script, it was created with lots of 
 
 The script is intended for people that do not want to learn specific git commands while still being able to collaborate with other git users on projects, especially in a setup where there are technical git maintainers and other collaborators.
 
+For further information see the [Abstract](https://doi.org/10.5281/zenodo.5379579) and [Poster](https://doi.org/10.5281/zenodo.5336613) for the [FORGE 2021](https://forge2021.uni-koeln.de/) conference.
+
 Please note that with this script it is assumed that the git repository was already cloned and setup properly before. If git lfs was also set up correctly the script works correctly with lfs as well.
 
 # Setting up
@@ -83,7 +85,7 @@ To run LAMA, double click on the LAMA-*.sh file located in the folder you want t
 
 The menu of LAMA looks like this:
 
-<img src="https://github.com/anneferger/lama/blob/main/logo/menu-screenshot.png" alt="Image" width="700" >
+<img src="https://github.com/digitalhumanists/lama/blob/main/logo/menu-screenshot.png" alt="Image" width="700" >
 
 Working with LAMA consists of some steps that need to be carried out in a specific order:
 
@@ -121,7 +123,7 @@ This steps additionally updates you local repository with the changes other peop
 
 If someone else worked on the files while you made changes, the script can show the following lines:
 
-<img src="https://github.com/anneferger/lama/blob/main/logo/merge-screenshot.png" alt="Image" width="700" >
+<img src="https://github.com/digitalhumanists/lama/blob/main/logo/merge-screenshot.png" alt="Image" width="700" >
 
 If you see these lines, the correct commit message is already written there automatically. To confirm the message and continue with the script, press *ESC, then enter the letters :wq and press ENTER*.
 If you're not able to enter the letters :wq after you pressed ESC, press the letter i instead and write :wq and press ENTER.
@@ -153,15 +155,15 @@ Enter your command (but take care, you have superpowers now) or just press ENTER
 
 ## LAMA in German
 
-There is a version of the LAMA script available in German [here](https://github.com/anneferger/lama/tree/main/LAMA-German). It contains the Mattermost and corpus-services integration, but you could comment out the respective parts to use the basic version in German. There is also a German documentation of using LAMA [here](https://github.com/anneferger/lama/blob/main/LAMA-German/LAMA%20_de.md).
+There is a version of the LAMA script available in German [here](https://github.com/digitalhumanists/lama/tree/main/LAMA-German). It contains the Mattermost and corpus-services integration, but you could comment out the respective parts to use the basic version in German. There is also a German documentation of using LAMA [here](https://github.com/digitalhumanists/lama/blob/main/LAMA-German/LAMA%20_de.md).
 
 ## LAMA with Mattermost Messages
 
-There is a more complex version of LAMA which sends messaged to Mattermost if a respective hook is provided available [here](https://github.com/anneferger/lama/tree/main/LAMA-Mattermost). Replace the variable mattermosturl="https://your.mattermost.server.com/mattermost/hooks/HOOKSHA" with you Mattermost Webhook URL. Find out more about how to create Mattermost Webhooks [here](https://docs.mattermost.com/developer/webhooks-incoming.html).
+There is a more complex version of LAMA which sends messaged to Mattermost if a respective hook is provided available [here](https://github.com/digitalhumanists/lama/tree/main/LAMA-Mattermost). Replace the variable mattermosturl="https://your.mattermost.server.com/mattermost/hooks/HOOKSHA" with you Mattermost Webhook URL. Find out more about how to create Mattermost Webhooks [here](https://docs.mattermost.com/developer/webhooks-incoming.html).
 
 ## LAMA with corpus services
 
-The most complex version of LAMA contains integration of the [corpus services](https://github.com/anneferger/corpus-services) tool using its jar. It is used when working with [EXMARaLDA](https://exmaralda.org/en/) corpora and git for pretty printing and normalizing of the transcription files. It also contains the Mattermost integration. See [here](https://github.com/anneferger/lama/tree/main/LAMA-corpus-services).
+The most complex version of LAMA contains integration of the [corpus services](https://github.com/anneferger/corpus-services) tool using its jar. It is used when working with [EXMARaLDA](https://exmaralda.org/en/) corpora and git for pretty printing and normalizing of the transcription files. It also contains the Mattermost integration. See [here](https://github.com/digitalhumanists/lama/tree/main/LAMA-corpus-services).
 
 <!-- LIBRARIES -->
 ## To be used with
@@ -177,7 +179,7 @@ optionally:
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/anneferger/lama/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/digitalhumanists/lama/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -209,7 +211,7 @@ Daniel Jettka
 
 Anne Ferger - [@anneferger1](https://twitter.com/anneferger1) - anne.ferger@mail.de
 
-Project Link: [LAMA](https://github.com/anneferger/lama)
+Project Link: [LAMA](https://github.com/digitalhumanists/lama)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
@@ -225,8 +227,8 @@ Logo created at [LogoMakr.com](https://logomakr.com/).
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/anneferger/lama/graphs/contributors
-[forks-url]: https://github.com/anneferger/lama/-/forks
-[issues-url]: https://github.com/anneferger/lama/issues
-[license-url]: https://github.com/anneferger/lama/blob/main/LICENSE
+[contributors-url]: https://github.com/digitalhumanists/lama/graphs/contributors
+[forks-url]: https://github.com/digitalhumanists/lama/-/forks
+[issues-url]: https://github.com/digitalhumanists/lama/issues
+[license-url]: https://github.com/digitalhumanists/lama/blob/main/LICENSE
 
